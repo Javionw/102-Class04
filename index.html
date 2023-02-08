@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin:0px;
+        color: tan;
+    
+      
+      background: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=826&t=st=1675832945~exp=1675833545~hmac=7075e5e2cf9110b309b2706359fca8bba976d295e285476d74387775de3653ad") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      }
+      .TopNav { 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        overflow: hidden;
+       max-height: 75px;
+      background-color: black;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+  
+      }
+      .TopNav a {
+        padding: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        color: blueviolet;
+        float:right;
+      }
+      .brand {
+        float:left;
+      }
+      .Title{
+        
+        color: blueviolet;
+      }
+      .sidenav { 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: blueviolet;
+        background-color: black;
+        width: 10%;
+        position: fixed;
+        z-index: 1;
+        top: 65px;
+        right: 20px;
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        color: inherit;
+        font-size: .9em;
+        /* border: 2px outset lightgray; */
+        display: block;
+      }
+      .sidenav a:hover {
+        color: #2196F3;
+      }
+      .main {
+        margin-top: 2em;
+        margin-left: 18%;
+        font-size: 1.2em;
+        padding: 0px 10px;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="TopNav">
+      <div class="brand"><a href="#">Home</a></div>
+      <div class="Title"><a href="#">Code101</a> </div>
+      <a href="#">Markdown</a>
+      <a href="#">Git</a>
+      <a href="#">Javascript</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">Bash</a>
+    </nav>
+    <!-- Sidebar Navigation -->
+    <nav id="side-nav" class="sidenav">
+      
+        <a href="#heading-section">Heading</a>
+        <a href="#Text-Info">TextInfo</a>
+        <a href="#BlockQuotes">BlockQuotes</a>
+        <a href="#Links">Links</a>
+        <a href="#Lists">Lists</a>
+        <a href="#Inline-Code-Blocks">Inline-Code-Blocks</a>
+        <a href="#Images">Images</a>
+      
+    </nav>
+    <main class="main">
+    <section id="heading-section">
+      <h2>Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+    <section id="Text-Info">
+      <h2>Text Info</h2>
+      <p>&lt;!-- Italics --&gt; <em>This text</em> is italic</p>
+      <p><em>This text</em> is italic</p>
+      <p>&lt;!-- Strong --&gt; <strong>This text</strong> is italic</p>
+      <p><strong>This text</strong> is italic</p>
+      <p>&lt;!-- Strikethrough --&gt; <s>This text</s> is strikethrough</p>
+      <p>&lt;!-- Horizontal Rule --&gt;</p>
+      <hr />
+      <hr />
+    </section>
+    <section id="BlockQuotes">
+      <p>&lt;!-- Blockquote --&gt;</p>
+      <blockquote>
+        <p>This is a quote</p>
+      </blockquote>
+    </section>
+    <section id="Links">
+      <p>&lt;!-- Links --&gt;</p>
+      <p>
+        <a href="http://www.traversymedia.com">Traversy Media</a>
+      </p>
+      <p>
+        <a href="http://www.traversymedia.com" title="Traversy Media"
+          >Traversy Media</a
+        >
+      </p>
+    </section>
+    <section id="Lists">
+      <p>&lt;!-- UL --&gt;</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>
+          Item 3
+          <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+          </ul>
+        </li>
+      </ul>
+      <p>&lt;!-- OL --&gt;</p>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </section>
+    <section id="Inline-Code-Blocks">
+      <p>
+        &lt;!-- Inline Code Block --&gt;
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+      </p>
+    </section>
+    <section id="Images">
+      <p>&lt;!-- Images --&gt;</p>
+      <img
+        src="https://markdown-here.com/img/icon256.png"
+        alt="Markdown Logo"
+      />
+    </section>
+
+    <!-- <p>&lt;!-- Github Markdown --&gt;</p>
+    <p>&lt;!-- Code Blocks --&gt;</p>
+    <pre><code class="language-bash">  npm install
+    
+      npm start
+    </code></pre>
+    <pre><code class="language-javascript">  function add(num1, num2) {
+        return num1 + num2;
+      }
+    </code></pre>
+    <pre><code class="language-python">  def add(num1, num2):
+        return num1 + num2
+    </code></pre>
+    <p>&lt;!-- Tables --&gt;</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jane Doe</td>
+          <td>jane@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&lt;!-- Task List --&gt;</p>
+    <ul>
+      <li>[x] Task 1</li>
+      <li>[x] Task 2</li>
+      <li>[ ] Task 3</li>
+    </ul> -->
+  </main>
+  </body>
+</html>
