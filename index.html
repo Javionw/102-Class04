@@ -7,15 +7,17 @@
     <title>Document</title>
     <style>
       body {
+        
+      
         margin:0px;
         color: tan;
-    
       
       background: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=826&t=st=1675832945~exp=1675833545~hmac=7075e5e2cf9110b309b2706359fca8bba976d295e285476d74387775de3653ad") no-repeat center center fixed;
       background-size: cover;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-      }
-      .TopNav { 
+    }
+  
+    .TopNav { 
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         overflow: hidden;
        max-height: 75px;
@@ -36,6 +38,8 @@
         float:left;
       }
       .Title{
+        
+      margin-right: 50%;
         
         color: blueviolet;
       }
@@ -69,18 +73,23 @@
         padding: 0px 10px;
         overflow-x: hidden;
       }
+      .CodeGif{
+        height: 250px;
+        width: 250px;
+        margin-left: 30%;
+      }
     </style>
   </head>
   <body>
     <nav class="TopNav">
       <div class="brand"><a href="#">Home</a></div>
-      <div class="Title"><a href="#">Code101</a> </div>
       <a href="#">Markdown</a>
       <a href="#">Git</a>
       <a href="#">Javascript</a>
       <a href="#">HTML</a>
       <a href="#">CSS</a>
       <a href="#">Bash</a>
+      <div class="Title"><a href="#">Code101</a> </div>
     </nav>
     <!-- Sidebar Navigation -->
     <nav id="side-nav" class="sidenav">
@@ -94,6 +103,9 @@
         <a href="#Images">Images</a>
       
     </nav>
+    <div class="CodeGif">
+      <img src=https://media.tenor.com/GfSX-u7VGM4AAAAC/coding.gif alt="coderimg">
+    </div>
     <main class="main">
     <section id="heading-section">
       <h2>Headings</h2>
@@ -163,22 +175,22 @@
       <img
         src="https://markdown-here.com/img/icon256.png"
         alt="Markdown Logo"
-      />
-    </section>
-
-    <!-- <p>&lt;!-- Github Markdown --&gt;</p>
-    <p>&lt;!-- Code Blocks --&gt;</p>
-    <pre><code class="language-bash">  npm install
-    
+        />
+      </section>
+      
+      <!-- <p>&lt;!-- Github Markdown --&gt;</p>
+        <p>&lt;!-- Code Blocks --&gt;</p>
+        <pre><code class="language-bash">  npm install
+          
       npm start
     </code></pre>
     <pre><code class="language-javascript">  function add(num1, num2) {
-        return num1 + num2;
-      }
+      return num1 + num2;
+    }
     </code></pre>
     <pre><code class="language-python">  def add(num1, num2):
         return num1 + num2
-    </code></pre>
+      </code></pre>
     <p>&lt;!-- Tables --&gt;</p>
     <table>
       <thead>
@@ -205,5 +217,7 @@
       <li>[ ] Task 3</li>
     </ul> -->
   </main>
-  </body>
+  <script src="script.js"></script>
+
+</body>
 </html>
