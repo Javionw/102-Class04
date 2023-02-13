@@ -78,7 +78,60 @@
         width: 250px;
         margin-left: 30%;
       }
-    </style>
+      .GitImg{
+        height: 25px;
+        width: 25px;
+      }
+      .container{
+        width: 600px;
+        border: 2px solid #333;
+        padding: 15px 10px;
+        margin-left: 200px;
+        margin-top: 115px;
+      }
+      .container h2{
+        
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      textarea{
+
+        height: 20px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #aaa;
+        background-color: transparent;
+        margin-bottom: 10px;
+        resize: none;
+        outline: none;
+        transition: .5s;
+      }
+      input[type="submmit"],button
+      {
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      input[type="submit"]
+      {
+        color: white;
+        background-color: limegreen;
+      }
+      .button
+      {
+        color: #ba0000;
+        background-color: transparent;
+      }
+      .btn
+      {
+        display: none;
+      }
+    
+      </style>
   </head>
   <body>
     <nav class="TopNav">
@@ -94,29 +147,33 @@
     <!-- Sidebar Navigation -->
     <nav id="side-nav" class="sidenav">
       
-        <a href="#heading-section">Heading</a>
-        <a href="#Text-Info">TextInfo</a>
-        <a href="#BlockQuotes">BlockQuotes</a>
-        <a href="#Links">Links</a>
-        <a href="#Lists">Lists</a>
-        <a href="#Inline-Code-Blocks">Inline-Code-Blocks</a>
-        <a href="#Images">Images</a>
+        <a href="#heading-section">Markdown</a>
+        <a href="#Text-Info">Git</a>
+        <a href="#BlockQuotes">HTML</a>
+        <a href="#Links">CSS</a>
+        <a href="#Inline-Code-Blocks">JavaScript</a>
+        <a href="#Images">Bash</a>
       
     </nav>
     <div class="CodeGif">
       <img src=https://media.tenor.com/GfSX-u7VGM4AAAAC/coding.gif alt="coderimg">
     </div>
     <main class="main">
+      <h1> All About Markdown!</h1>
     <section id="heading-section">
-      <h2>Headings</h2>
+      <details>
+        <summary>Headings</summary>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
+    </details>
     </section>
     <section id="Text-Info">
+      <details>
+        <summary>Text-Info</summary>
       <h2>Text Info</h2>
       <p>&lt;!-- Italics --&gt; <em>This text</em> is italic</p>
       <p><em>This text</em> is italic</p>
@@ -126,14 +183,21 @@
       <p>&lt;!-- Horizontal Rule --&gt;</p>
       <hr />
       <hr />
+    </details>
     </section>
     <section id="BlockQuotes">
+      <details>
+        <summary>BlockQuotes</summary>
       <p>&lt;!-- Blockquote --&gt;</p>
       <blockquote>
         <p>This is a quote</p>
       </blockquote>
+    </details>
     </section>
     <section id="Links">
+      <details>
+        <summary>Links</summary>
+      
       <p>&lt;!-- Links --&gt;</p>
       <p>
         <a href="http://www.traversymedia.com">Traversy Media</a>
@@ -143,8 +207,12 @@
           >Traversy Media</a
         >
       </p>
+    </details>
     </section>
     <section id="Lists">
+      <details>
+        <summary>Lists</summary>
+      
       <p>&lt;!-- UL --&gt;</p>
       <ul>
         <li>Item 1</li>
@@ -163,20 +231,96 @@
         <li>Item 2</li>
         <li>Item 3</li>
       </ol>
+    </details>
     </section>
     <section id="Inline-Code-Blocks">
+      <details>
+        <summary>Inline-Code-Blocks</summary>
+      
       <p>
         &lt;!-- Inline Code Block --&gt;
         <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
       </p>
+    </details>
     </section>
     <section id="Images">
+      <details>
+        <summary>Images</summary>
+      
       <p>&lt;!-- Images --&gt;</p>
       <img
         src="https://markdown-here.com/img/icon256.png"
         alt="Markdown Logo"
         />
-      </section>
+      </details>
+      </section>      
+      
+      <p> <h1>Git <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="GitImg" width="50"></h1> 
+        
+        <details><summary>What is Git?</summary>
+Git is a system of Snapshopts, Local Operations, Traking changes, Loss of Data and States .
+Firstly Git USes to things in order to manage files and collaboration with a team of developers. CVS
+The first system is called CVCS (Centralized Version Control System). This system is invovles a single sever storing all changes and file versions, which can allow other clinents access to them. This smoothed the collaboration process which allowed programmer to ahve more knowledge of team members’ activities woth ceratin files and gave admins. more control over divvying up revision privileges. DVCS
+The second system is call DVCS (Distributed Version Control systems). This system addresses the major vulnerability of the CVS: the sever as a single point of failure. If CVS crashes, collaborators can’t work with each other on a file or save changes and new versions. Also if a corruption of cecentral database’s hard disk, without backing it up, all work will be lost. So DVCS allows people to create mirrored repositories. This mirror is essentially a data backups and DVCS can mirror repos. multiple times. This makes it so programmers are able to complete projects, which allows for use of various simultaneous workflows. Snapshots
+</p>
+</details>
+<p> <h1>HTML <img src="http://rmanak.github.io/simplehtml/theme1/img/HTML.jpg" alt="HTMLimg" width="100"></h1>
+<Details><summary>Learning HTML</summary>
+  Definition: HTML stands for Hypertext Markup Language, and is the standard language used for creating web pages. 
+  Structure: HTML documents are structured using elements, which are represented by tags enclosed in angle brackets.
+  Semantic Elements: HTML5 introduced semantic elements, such as header, footer, nav, main, article, section, etc., which provide meaning and structure to the web page content.  
+  Attributes: HTML elements can have attributes, which provide additional information about the element and how it should be displayed.  
+  Head and Body: HTML documents have two main parts: the head, which contains information about the document, and the body, which contains the content that is displayed on the web page.
+  Links: HTML provides a way to create links between web pages using the anchor tag, represented by the ‘’   element.  
+  Images: The ‘’   element is used to embed images in HTML documents.
+  Forms: HTML forms allow users to enter data, which can be sent to a server for processing using the ‘form’ element and various form controls, such as text inputs, radio buttons, checkboxes, etc.
+  Tables: HTML tables can be used to present data in a tabular format using the ‘table’, ‘tr’, ‘th’, and ‘td’ elements.  
+  CSS and JavaScript: HTML can be combined with Cascading Style Sheets (CSS) for styling and layout, and with JavaScript for dynamic functionality.
+</Details>
+</p>
+<h1>CSS <img src="https://www.dreamhost.com/blog/wp-content/uploads/2022/07/how-to-learn-CSS-fast-DreamHost-4.jpg" alt="CSSimg" width="100"></h1><details><summary>Styling w/CSS</summary>
+<p>
+  Definition: CSS stands for Cascading Style Sheets and is a stylesheet language used for describing the look and formatting of a HTML document.
+Purpose: CSS is used to separate the presentation of a web page from its structure, defined using HTML. This makes it easier to maintain and update the style and layout of a website or application.
+Syntax: CSS consists of rules, which consist of a selector and a declaration block. The selector identifies the HTML element(s) to which the styles should be applied, and the declaration block contains one or more declarations specifying the styles.
+Selectors: CSS provides a variety of selectors, including element selectors, class selectors, and ID selectors, which allow you to target specific elements on a web page.
+Properties: CSS has a wide range of properties, such as color, font-size, padding, margin, etc., which allow you to control the appearance of HTML elements.
+Box Model: The CSS box model describes how elements are sized and positioned on a web page, with a content area surrounded by padding, borders, and margins.
+Layout: CSS provides a variety of layout techniques, including floating and absolute positioning, as well as flexbox and grid, which allow you to create complex and responsive layouts.
+CSS Frameworks: There are a number of CSS frameworks available, such as Bootstrap and Foundation, which provide a pre-designed set of styles and components, making it easier to create websites and applications.
+Preprocessors: CSS preprocessors, such as Sass and Less, extend the capabilities of CSS by adding variables, mixins, functions, and other features, making it easier to write and maintain large and complex stylesheets. 
+</p>
+</details>
+<h1>JavaScript <img src="https://www.w3docs.com/uploads/media/default/0001/05/4482fe09d95a0be765154b9cefff5e07f7fc32ff.png" alt="javaimg" width="100"></h1>
+<details><summary>About JS</summary>
+  <p>
+    JavaScript is a high-level, dynamic, interpreted programming language.
+    It was created in 1995 by Brendan Eich while he was working at Netscape Communications Corporation. 
+    JavaScript is primarily used to make webpages dynamic and interactive.  
+    It is a client-side scripting language, meaning the code is executed on the client’s web browser, not on the server.
+    JavaScript is used in combination with HTML and CSS to create dynamic webpages.    
+    JavaScript is an object-oriented programming language and uses prototypes instead of classes for inheritance.  
+    Variables in JavaScript are declared using the “var”, “let” or “const” keyword.    
+    Functions are the first-class citizens in JavaScript and can be passed as arguments, assigned to variables or returned from other functions.   
+    JavaScript has a number of built-in functions and objects like Array, Math, Date and more.   
+    JavaScript is case-sensitive and uses camelCase for naming variables and functions.    
+    JavaScript is a loosely typed language, meaning a variable can hold any data type.    
+    It has a number of useful features such as event handling, exception handling and automatic type conversion.    
+    JavaScript is one of the three core technologies of the World Wide Web and is used by more than 95% of websites.   
+    JavaScript is used to create both desktop and server-side applications.
+  </p>
+</details>
+  <div class="container">
+      <h2>Leave us a Comment!</h2>
+      <form>
+          <textarea placeholder="Add Your Comment"></textarea>
+          <div class="btn">
+            <input type="Submit" value="Comment">
+            <button>Cancel</button>
+          </div>
+      </form>
+
+  </div>
       
       <!-- <p>&lt;!-- Github Markdown --&gt;</p>
         <p>&lt;!-- Code Blocks --&gt;</p>
@@ -204,7 +348,7 @@
           <td>John Doe</td>
           <td>john@gmail.com</td>
         </tr>
-        <tr>
+         <tr>
           <td>Jane Doe</td>
           <td>jane@gmail.com</td>
         </tr>
