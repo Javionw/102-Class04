@@ -5,133 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        
-      
-        margin:0px;
-        color: tan;
-      
-      background: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=826&t=st=1675832945~exp=1675833545~hmac=7075e5e2cf9110b309b2706359fca8bba976d295e285476d74387775de3653ad") no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    }
-  
-    .TopNav { 
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        overflow: hidden;
-       max-height: 75px;
-      background-color: black;
-      position: fixed;
-      top: 0px;
-      width: 100%;
-  
-      }
-      .TopNav a {
-        padding: 10px;
-        font-size: 15px;
-        text-decoration: none;
-        color: blueviolet;
-        float:right;
-      }
-      .brand {
-        float:left;
-      }
-      .Title{
-        
-      margin-right: 50%;
-        
-        color: blueviolet;
-      }
-      .sidenav { 
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: blueviolet;
-        background-color: black;
-        width: 10%;
-        position: fixed;
-        z-index: 1;
-        top: 65px;
-        right: 20px;
-        overflow-x: hidden;
-        padding: 8px 0;
-      }
-      .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        color: inherit;
-        font-size: .9em;
-        /* border: 2px outset lightgray; */
-        display: block;
-      }
-      .sidenav a:hover {
-        color: #2196F3;
-      }
-      .main {
-        margin-top: 2em;
-        margin-left: 18%;
-        font-size: 1.2em;
-        padding: 0px 10px;
-        overflow-x: hidden;
-      }
-      .CodeGif{
-        height: 250px;
-        width: 250px;
-        margin-left: 30%;
-      }
-      .GitImg{
-        height: 25px;
-        width: 25px;
-      }
-      .container{
-        width: 600px;
-        border: 2px solid #333;
-        padding: 15px 10px;
-        margin-left: 200px;
-        margin-top: 115px;
-      }
-      .container h2{
-        
-        text-align: center;
-        margin-bottom: 15px;
-      }
-      textarea{
-
-        height: 20px;
-        width: 100%;
-        border: none;
-        border-bottom: 2px solid #aaa;
-        background-color: transparent;
-        margin-bottom: 10px;
-        resize: none;
-        outline: none;
-        transition: .5s;
-      }
-      input[type="submmit"],button
-      {
-        padding: 10px 15px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      input[type="submit"]
-      {
-        color: white;
-        background-color: limegreen;
-      }
-      .button
-      {
-        color: #ba0000;
-        background-color: transparent;
-      }
-      .btn
-      {
-        display: none;
-      }
-    
-      </style>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <nav class="TopNav">
@@ -144,6 +18,14 @@
       <a href="#">Bash</a>
       <div class="Title"><a href="#">Code101</a> </div>
     </nav>
+    <div class="WelcomeStatement">
+      <p> Hello Welcome to my intro to code webpage. Here you will have the oppurtunity to learn and even try
+        the basics of coding. Varying from Html to markdown over to CSS and even Javascript! I hope you enjoy
+        the resources we've provided, feel free to use our comment box for feedback! Happy Studying/Learning!!!
+
+
+      </p>
+    </div>
     <!-- Sidebar Navigation -->
     <nav id="side-nav" class="sidenav">
       
@@ -310,15 +192,23 @@ Preprocessors: CSS preprocessors, such as Sass and Less, extend the capabilities
     JavaScript is used to create both desktop and server-side applications.
   </p>
 </details>
+<div id="imgholder"> <div class="rateme">
+  <button id="ratebutton">Rate me!</button>
+</div>
+</div>
+
   <div class="container">
       <h2>Leave us a Comment!</h2>
       <form>
           <textarea placeholder="Add Your Comment"></textarea>
-          <div class="btn">
+          <div class="button">
             <input type="Submit" value="Comment">
             <button>Cancel</button>
           </div>
       </form>
+      <head>
+
+      </head>
 
   </div>
       
@@ -362,6 +252,6 @@ Preprocessors: CSS preprocessors, such as Sass and Less, extend the capabilities
     </ul> -->
   </main>
   <script src="script.js"></script>
-
+  <script src="style.css"></script>
 </body>
 </html>

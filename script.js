@@ -25,29 +25,18 @@ function construction() {
 }
 construction();
 
-var feild = document.quertSelector('textarea');
-var backUp = feild.getAttribute('placeholder');
-var btn = document.querySelector('.btn');
-var clear = document.getElementById('clear') 
-
-feild.onfocus = function(){
-    this.setAttribute('placeholder','');
-    this.style.borderColor = '#333 ';
-    btn.style.display = 'block' 
+function rate(){
+    const rating = parseInt(prompt('How would you rate my webpage?'));
+    for (let index = 0; index < rating; index++) {
+        const img = document.createElement('img');
+        img.src ='https://hotemoji.com/images/dl/w/5-thumbs-up-emoji-by-google.png'
+        document.getElementById('imgholder').appendChild(img);
+        
+    }
 }
-feild.onblur = function(){
-    this.setAttribute('placeholder',backUp)
-    this.style.bordercolor = '#aaa'
-}
-clear.onclick = function(){
+const button = document.getElementById('ratebutton');
+button.addEventListener('click', rate);
 
-    btn.style.display = "none";
-    feild.value = '';
-}
+// let strings = "repeat this";
 
-// applepie();
-
-// pie2(9);
-
-
-// console.log(ingredientX);
+// function loop()
